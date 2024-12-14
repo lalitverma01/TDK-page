@@ -99,10 +99,6 @@
     padding-top: 44px;
 }
 
-.pb-17 {
-    padding-bottom: 17px;
-}
-
 .mt-63 {
     margin-top: 63px;
     margin-bottom: 68px;
@@ -114,6 +110,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    height: 930px;
 }
 
 .bg-dark-blue {
@@ -131,6 +128,11 @@
     line-height: 15px;
     text-align: left;
     color: white;
+}
+
+.nav-hover:hover {
+    transform: scale(1.1);
+    transition: all 300ms linear;
 }
 
 .search {
@@ -167,6 +169,7 @@ h1 {
     line-height: 83.08px;
     text-align: center;
     color: #FFFFFF;
+    margin-top: 46px;
 }
 
 p {
@@ -207,8 +210,8 @@ p {
     }
 
     label[for="openslider"] {
-        width: 40px;
-        height: 25px;
+        width: 30px;
+        height: 29px;
         cursor: pointer;
         display: flex;
         flex-direction: column;
@@ -228,12 +231,12 @@ p {
     }
 
     input:checked~label[for="openslider"] span:first-child {
-        transform: rotate(30deg);
+        transform: rotate(51deg);
         transform-origin: left;
     }
 
     input:checked~label[for="openslider"] span:last-child {
-        transform: rotate(-30deg);
+        transform: rotate(-53deg);
         transform-origin: left;
     }
 
@@ -244,14 +247,23 @@ p {
     }
 }
 
-@media (max-width:576px) {
-    h1 {
-        font-size: 38px;
-        line-height: 50px;
-    }
-
+@media (max-width:575.98px) {
     .Rough-logo-img {
         padding-left: 12px;
         padding-right: 12px;
+    }
+
+    p {
+        font-size: 21px;
+        line-height: 21.79px;
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+}
+
+@media (max-width:767.98px) {
+    h1 {
+        font-size: 35px;
+        line-height: 40.86px;
     }
 }
